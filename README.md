@@ -9,10 +9,10 @@ A  MIT-licensed framework for testing and evaluating LLMs, RAGs, and chatbots.
 
 ## Table of Contents
 - [Features](https://github.com/Addepto/contextcheck#features)
-- [LLM Prompts Testing](https://github.com/Addepto/contextcheck#llm-testing-process)
+- [LLM Prompts Testing](https://github.com/Addepto/contextcheck#llm-prompts-testing)
   - [LLM Prompts Testing Process](https://github.com/Addepto/contextcheck#llm-prompts-testing-process)
 - [Testing Prompts Across Different Models](https://github.com/Addepto/contextcheck#testing-prompts-across-different-models)
-- [RAG (Retrieval Augmented Generation) System Validation](https://github.com/Addepto/contextcheck#rag-system-validation)
+- [RAG (Retrieval Augmented Generation) System Testing](https://github.com/Addepto/contextcheck#rag-system-testing)
   - [RAG System Testing Process](https://github.com/Addepto/contextcheck#rag-system-testing-process)
   - [Test-driven RAG system development](https://github.com/Addepto/contextcheck#test-driven-rag-system-development)
   - [Metrics](https://github.com/Addepto/contextcheck#metrics)
