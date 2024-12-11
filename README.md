@@ -1,10 +1,10 @@
 ![ContextCheck Logo](https://raw.githubusercontent.com/Addepto/contextcheck/main/docs/contextcheck_logo_violet.png)
 
-# ContextCheck
+# ContextCheck: Test your LLMs, RAGs and Chatbots
 
-A  MIT-licensed framework for testing and evaluating LLMs, RAGs, and chatbots.
+`ContextCheck` is a MIT-licensed framework for testing, evaluating LLMs, RAGs, and chatbots.
 
-**ContextCheck** is an open-source framework designed to evaluate, test, and validate large language models (LLMs), Retrieval-Augmented Generation (RAG) systems, and chatbots. It provides tools to automatically generate queries, request completions, detect regressions, perform penetration tests, and assess hallucinations, ensuring the robustness and reliability of these systems. ContextCheck is configurable via YAML and can be integrated into continuous integration (CI) pipelines for automated testing.
+**ContextCheck** is an open-source framework designed to evaluate, test, and validate large language models (LLMs), Retrieval-Augmented Generation (RAG) systems, and AI chatbots. It offers AI testing tools to automatically generate queries, request completions, detect regressions, perform penetration tests, and assess hallucinations, ensuring the robustness and reliability of these systems. ContextCheck is fully configurable via YAML and integrates seamlessly into continuous integration (CI) pipelines for efficient prompt testing and automated validation.
 
 
 ## Table of Contents
@@ -39,7 +39,7 @@ A  MIT-licensed framework for testing and evaluating LLMs, RAGs, and chatbots.
 - **Enhanced output formatting** with the `rich` package for clear, readable displays
 
 ## LLM Prompts Testing
-An LLM prompt is a specific input or query provided to a language model to generate a response based on the model's training data. ContextCheck provides an easy-to-use tool for fine-tuning and validating multiple prompts at once.
+An LLM prompt is a specific input or query provided to a language model to generate a response based on the model's training data. ContextCheck provides an easy-to-use tool for fine-tuning and testing multiple prompts at once.
 
 ### LLM Prompts Testing Process
 The prompts testing workflow consists of the following steps:
