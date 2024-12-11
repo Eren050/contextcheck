@@ -2,18 +2,18 @@
 
 # ContextCheck
 
-A human-friendly framework for testing and evaluating LLMs, RAGs, and chatbots.
+A  MIT-licensed framework for testing and evaluating LLMs, RAGs, and chatbots.
 
 **ContextCheck** is an open-source framework designed to evaluate, test, and validate large language models (LLMs), Retrieval-Augmented Generation (RAG) systems, and chatbots. It provides tools to automatically generate queries, request completions, detect regressions, perform penetration tests, and assess hallucinations, ensuring the robustness and reliability of these systems. ContextCheck is configurable via YAML and can be integrated into continuous integration (CI) pipelines for automated testing.
 
 
 ## Table of Contents
 - [Features](https://github.com/Addepto/contextcheck#features)
-- [LLM Prompts Validation](https://github.com/Addepto/contextcheck#llm-validation-process)
-  - [LLM Prompts Validation Process](https://github.com/Addepto/contextcheck#llm-prompts-validation-process)
+- [LLM Prompts Testing](https://github.com/Addepto/contextcheck#llm-testing-process)
+  - [LLM Prompts Testing Process](https://github.com/Addepto/contextcheck#llm-prompts-testing-process)
 - [Testing Prompts Across Different Models](https://github.com/Addepto/contextcheck#testing-prompts-across-different-models)
 - [RAG (Retrieval Augmented Generation) System Validation](https://github.com/Addepto/contextcheck#rag-system-validation)
-  - [RAG System Validation Process](https://github.com/Addepto/contextcheck#rag-system-validation-process)
+  - [RAG System Testing Process](https://github.com/Addepto/contextcheck#rag-system-testing-process)
   - [Test-driven RAG system development](https://github.com/Addepto/contextcheck#test-driven-rag-system-development)
   - [Metrics](https://github.com/Addepto/contextcheck#metrics)
 - [Installation](https://github.com/Addepto/contextcheck#installation)
@@ -38,10 +38,10 @@ A human-friendly framework for testing and evaluating LLMs, RAGs, and chatbots.
 - **Response validation** options, including heuristics, LLM-based judgment, and human labeling
 - **Enhanced output formatting** with the `rich` package for clear, readable displays
 
-## LLM Prompts Validation
+## LLM Prompts Testing
 An LLM prompt is a specific input or query provided to a language model to generate a response based on the model's training data. ContextCheck provides an easy-to-use tool for fine-tuning and validating multiple prompts at once.
 
-### LLM Prompts Validation Process
+### LLM Prompts Testing Process
 The prompts testing workflow consists of the following steps:
 
 1. Choose an LLM: Select the provider and model version you want to test your prompts with.
@@ -67,7 +67,7 @@ The LLM landscape changes rapidly. When new models or model versions become avai
 
 Note that in the case of prompt validation, not all LLM-based metrics are applicable. For example, the `hallucination` metric requires reference documents to verify if the answer is based solely on the reference or if it is fabricated.
 
-## RAG (Retrieval Augmented Generation) System Validation
+## RAG (Retrieval Augmented Generation) System Testing
 This scenario is similar to the "prompts validation" but instead of testing LLMs, the goal is to validate the performance of the RAG system API endpoint. ContextCheck sends a query to the API endpoint, receives a response from the RAG system, and validates that answer.
 
 As the name suggests, RAG systems generate their answers based on the content retrieved from external sources or databases, combining retrieval and generation to provide more accurate and contextually relevant responses.
@@ -78,7 +78,7 @@ Depending on your needs, ContextCheck can test only the response from the RAG sy
 
 Currently, ContextCheck only supports fetching reference documents. However, future updates will enable users to extract and test inputs or outputs from any component of a RAG system. These features will be implemented with minimal changes required to the RAG system's codebase.
 
-### RAG System Validation Process
+### RAG System Testing Process
 The prompts testing workflow consists of the following steps:
 
 1. **Configure:** Both ContextCheck and (depending on particular use-case) RAG system have to be configured. Refer to details in chapter [RAG Configuration](https://github.com/Addepto/contextcheck/blob/main/docs/docs/user_guide/rag_configuration.md).
